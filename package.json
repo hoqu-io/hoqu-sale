@@ -2,5 +2,8 @@
   "name": "hoqu-sale",
   "version": "1.0.0",
   "author": "Aleksandr Krivtcun <a.krivtcun@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "zeppelin-solidity": "^1.4.0"
+  }
 }
