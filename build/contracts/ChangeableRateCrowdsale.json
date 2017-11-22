@@ -1,0 +1,3475 @@
+{
+  "contractName": "ChangeableRateCrowdsale",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_receiver",
+          "type": "address"
+        }
+      ],
+      "name": "claimOne",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "maxTokensAmount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "minBuyableAmount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_receiver",
+          "type": "address"
+        },
+        {
+          "name": "_equivalentEthAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "sub",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tokenRate",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "i",
+          "type": "uint32"
+        }
+      ],
+      "name": "getReceiver",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "unpause",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "rateBoundaries",
+      "outputs": [
+        {
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "name": "rate",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "claim",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "paused",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_tokenRate",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTokenRate",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "bankAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isFinished",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "pause",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "currentBoundary",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "buy",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getReceiversCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "claimAll",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "numOfBoundaries",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "finish",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_receiver",
+          "type": "address"
+        },
+        {
+          "name": "_equivalentEthAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "topUp",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "approved",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_receiver",
+          "type": "address"
+        }
+      ],
+      "name": "approve",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "tokens",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "issuedTokensAmount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nextBoundaryAmount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_receiver",
+          "type": "address"
+        },
+        {
+          "name": "_equivalentEthAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "add",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_tokenAddress",
+          "type": "address"
+        },
+        {
+          "name": "_bankAddress",
+          "type": "address"
+        },
+        {
+          "name": "_beneficiaryAddress",
+          "type": "address"
+        },
+        {
+          "name": "_tokenRate",
+          "type": "uint256"
+        },
+        {
+          "name": "_minBuyableAmount",
+          "type": "uint256"
+        },
+        {
+          "name": "_maxTokensAmount",
+          "type": "uint256"
+        },
+        {
+          "name": "_endDate",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_buyer",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_tokens",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "TokenBought",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_receiver",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_tokens",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_equivalentAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "TokenAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_receiver",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_tokens",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_equivalentAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "TokenToppedUp",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_receiver",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_tokens",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_equivalentAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "TokenSubtracted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_receiver",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_tokens",
+          "type": "uint256"
+        }
+      ],
+      "name": "TokenSent",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Pause",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Unpause",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x606060405260008060146101000a81548160ff02191690831515021790555060006005556000600960006101000a81548160ff0219169083151502179055506000600f556000601055341561005357600080fd5b60405160e0806124978339810160405280805190602001909190805190602001909190805190602001909190805190602001909190805190602001909190805190602001909190805190602001909190505086868686868686336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555086600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555085600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555084600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550836007819055508260068190555081600481905550806008819055505050505050505060408051908101604052806a0b658e154215c96f1000008152602001611770815250600e600060106000815480929190600101919050558152602001908152602001600020600082015181600001556020820151816001015590505060408051908101604052806a16cb1c2a842b92de2000008152602001611676815250600e600060106000815480929190600101919050558152602001908152602001600020600082015181600001556020820151816001015590505060408051908101604052806a2230aa3fc6415c4d3000008152602001611612815250600e600060106000815480929190600101919050558152602001908152602001600020600082015181600001556020820151816001015590505060408051908101604052806a2d963855085725bc40000081526020016115ae815250600e600060106000815480929190600101919050558152602001908152602001600020600082015181600001556020820151816001015590505060408051908101604052806a38fbc66a4a6cef2b500000815260200161154a815250600e600060106000815480929190600101919050558152602001908152602001600020600082015181600001556020820151816001015590505060408051908101604052806a4461547f8c82b89a60000081526020016114e6815250600e600060106000815480929190600101919050558152602001908152602001600020600082015181600001556020820151816001015590505060408051908101604052806a4fc6e294ce9882097000008152602001611482815250600e600060106000815480929190600101919050558152602001908152602001600020600082015181600001556020820151816001015590505060408051908101604052806a5b2c70aa10ae4b78800000815260200161141e815250600e600060106000815480929190600101919050558152602001908152602001600020600082015181600001556020820151816001015590505060408051908101604052806a71f78cd494d9de56a000008152602001611388815250600e6000601060008154809291906001019190505581526020019081526020016000206000820151816000015560208201518160010155905050600e6000600f5481526020019081526020016000206000015460118190555050505050505050611f54806105436000396000f300606060405260043610610180576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630262dc131461018a5780630a384665146101c35780632511b182146101ec57806326ffee081461021557806331711884146102575780633c78fe07146102805780633f4ba83a146102e95780634a751072146102fe5780634e71d92d1461033c5780635c975abb1461035157806361241c281461037e5780637822ed49146103a15780637b352962146103f65780638456cb59146104235780638da5cb5b14610438578063a4bd7a201461048d578063a6f2ae3a146104b6578063a72a05f7146104c0578063d1058e59146104f5578063d4f114a61461050a578063d56b288914610533578063d6f7ddf914610548578063d8b964e61461058a578063daea85c5146105db578063e486033914610614578063e69b414b14610661578063f07255e31461068a578063f2fde38b146106b3578063f5d82b6b146106ec578063fc0c546a1461072e575b610188610783565b005b341561019557600080fd5b6101c1600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610994565b005b34156101ce57600080fd5b6101d6610a17565b6040518082815260200191505060405180910390f35b34156101f757600080fd5b6101ff610a1d565b6040518082815260200191505060405180910390f35b341561022057600080fd5b610255600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050610a23565b005b341561026257600080fd5b61026a610c0c565b6040518082815260200191505060405180910390f35b341561028b57600080fd5b6102a7600480803563ffffffff16906020019091905050610c12565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156102f457600080fd5b6102fc610cb6565b005b341561030957600080fd5b61031f6004808035906020019091905050610d74565b604051808381526020018281526020019250505060405180910390f35b341561034757600080fd5b61034f610d98565b005b341561035c57600080fd5b610364610dbf565b604051808215151515815260200191505060405180910390f35b341561038957600080fd5b61039f6004808035906020019091905050610dd2565b005b34156103ac57600080fd5b6103b4610e46565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561040157600080fd5b610409610e6c565b604051808215151515815260200191505060405180910390f35b341561042e57600080fd5b610436610e7f565b005b341561044357600080fd5b61044b610f3f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561049857600080fd5b6104a0610f64565b6040518082815260200191505060405180910390f35b6104be610783565b005b34156104cb57600080fd5b6104d3610f6a565b604051808263ffffffff1663ffffffff16815260200191505060405180910390f35b341561050057600080fd5b610508610fdf565b005b341561051557600080fd5b61051d61117e565b6040518082815260200191505060405180910390f35b341561053e57600080fd5b610546611184565b005b341561055357600080fd5b610588600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050611421565b005b341561059557600080fd5b6105c1600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050611531565b604051808215151515815260200191505060405180910390f35b34156105e657600080fd5b610612600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050611551565b005b341561061f57600080fd5b61064b600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050611623565b6040518082815260200191505060405180910390f35b341561066c57600080fd5b61067461163b565b6040518082815260200191505060405180910390f35b341561069557600080fd5b61069d611641565b6040518082815260200191505060405180910390f35b34156106be57600080fd5b6106ea600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050611647565b005b34156106f757600080fd5b61072c600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061179c565b005b341561073957600080fd5b6107416118eb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000806000600960009054906101000a900460ff161515156107a457600080fd5b6004546005541015156107b657600080fd5b60085442111515156107c757600080fd5b600060149054906101000a900460ff161515156107e357600080fd5b349250600091506107ff8360075461191190919063ffffffff16565b9050600454816005540111156108555761082660055460045461194c90919063ffffffff16565b905061083d6007548261196590919063ffffffff16565b9250610852833461194c90919063ffffffff16565b91505b61086a8160055461198090919063ffffffff16565b6005819055506004546005541115151561088357600080fd5b61088d338261199e565b3373ffffffffffffffffffffffffffffffffffffffff167f28cab0d660ed8aedd61a8c9db00b97f6a2d67e07d87795994f440b18bc5f1aa38285604051808381526020018281526020019250505060405180910390a2600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc849081150290604051600060405180830381858888f19350505050151561094557600080fd5b600082111561098f573373ffffffffffffffffffffffffffffffffffffffff166108fc839081150290604051600060405180830381858888f19350505050151561098e57600080fd5b5b505050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156109ef57600080fd5b600060149054906101000a900460ff16151515610a0b57600080fd5b610a14816119d0565b50565b60045481565b60065481565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610a8057600080fd5b600060149054906101000a900460ff16151515610a9c57600080fd5b610ab18260075461191190919063ffffffff16565b905080600a60008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410151515610b0157600080fd5b610b5381600a60008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461194c90919063ffffffff16565b600a60008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610bab8160055461194c90919063ffffffff16565b6005819055508273ffffffffffffffffffffffffffffffffffffffff167f2da8b2becb27b189a54d21689aa110c877379a94c6f59f115cedc91d66239b338284604051808381526020018281526020019250505060405180910390a2505050565b60075481565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610c6f57600080fd5b600c60008363ffffffff1663ffffffff16815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050919050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610d1157600080fd5b600060149054906101000a900460ff161515610d2c57600080fd5b60008060146101000a81548160ff0219169083151502179055507f7805862f689e2f13df9f062ff482ad3ad112aca9e0847911ed832e158c525b3360405160405180910390a1565b600e6020528060005260406000206000915090508060000154908060010154905082565b600060149054906101000a900460ff16151515610db457600080fd5b610dbd336119d0565b565b600060149054906101000a900460ff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610e2d57600080fd5b600081111515610e3c57600080fd5b8060078190555050565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600960009054906101000a900460ff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610eda57600080fd5b600060149054906101000a900460ff16151515610ef657600080fd5b6001600060146101000a81548160ff0219169083151502179055507f6985a02210a168e66602d3235cb6db0e70f92b3ba4d376a33c0f3d9434bff62560405160405180910390a1565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600f5481565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610fc757600080fd5b600d60009054906101000a900463ffffffff16905090565b6000806000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561103d57600080fd5b600060149054906101000a900460ff1615151561105957600080fd5b600091505b600d60009054906101000a900463ffffffff1663ffffffff168263ffffffff16101561117a57600c60008363ffffffff1663ffffffff16815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050600b60008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16801561115e57506000600a60008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054115b1561116d5761116c816119d0565b5b818060010192505061105e565b5050565b60105481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156111df57600080fd5b6004546005541015806111f3575060085442115b15156111fe57600080fd5b600960009054906101000a900460ff1615151561121a57600080fd5b6001600960006101000a81548160ff021916908315150217905550600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306000604051602001526040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b151561135b57600080fd5b6102c65a03f1151561136c57600080fd5b505050604051805190506000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b151561140357600080fd5b6102c65a03f1151561141457600080fd5b5050506040518051905050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561147e57600080fd5b600060149054906101000a900460ff1615151561149a57600080fd5b6114af8260075461191190919063ffffffff16565b90506114c68160055461198090919063ffffffff16565b6005819055506114d6838261199e565b8273ffffffffffffffffffffffffffffffffffffffff167ff10143e1b37ebaf3698e98976d8bddabcea045adc939c03b245da18e81ea96518284604051808381526020018281526020019250505060405180910390a2505050565b600b6020528060005260406000206000915054906101000a900460ff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156115ac57600080fd5b600060149054906101000a900460ff161515156115c857600080fd5b6001600b60008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b600a6020528060005260406000206000915090505481565b60055481565b60115481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156116a257600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156116de57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156117f957600080fd5b600960009054906101000a900460ff1615151561181557600080fd5b60045460055410151561182757600080fd5b600854421115151561183857600080fd5b600060149054906101000a900460ff1615151561185457600080fd5b6118698260075461191190919063ffffffff16565b90506118808160055461198090919063ffffffff16565b600581905550611890838261199e565b8273ffffffffffffffffffffffffffffffffffffffff167fa818a22273fc309f0a3682b642c74c5b5c25c0615ff378d07767cd231e19fffc8284604051808381526020018281526020019250505060405180910390a2505050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060008414156119265760009150611945565b828402905082848281151561193757fe5b0414151561194157fe5b8091505b5092915050565b600082821115151561195a57fe5b818303905092915050565b600080828481151561197357fe5b0490508091505092915050565b600080828401905083811015151561199457fe5b8091505092915050565b600060149054906101000a900460ff161515156119ba57600080fd5b6119c48282611cab565b6119cc611eac565b5050565b60008060149054906101000a900460ff161515156119ed57600080fd5b600b60008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff161515611a4557600080fd5b6000600a60008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054111515611a9357600080fd5b600a60008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205490506000600a60008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1684846000604051602001526040518463ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b1515611c3d57600080fd5b6102c65a03f11515611c4e57600080fd5b50505060405180519050508173ffffffffffffffffffffffffffffffffffffffff167fd4ff88d569a7ad2bfd6b17da9dbe82e2ccc016fd0051e08ff1ad1e6fe8fc9b55826040518082815260200191505060405180910390a25050565b600060149054906101000a900460ff16151515611cc757600080fd5b6000600a60008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020541415611e135781600c6000600d60009054906101000a900463ffffffff1663ffffffff1663ffffffff16815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600d600081819054906101000a900463ffffffff168092919060010191906101000a81548163ffffffff021916908363ffffffff160217905550506000600b60008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505b611e6581600a60008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461198090919063ffffffff16565b600a60008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055505050565b601154600554101515611f2657600f60008154809291906001019190505550601054600f54101515611ee657600454601181905550611f25565b600e6000600f54815260200190815260200160002060000154601181905550600e6000600f548152602001908152602001600020600101546007819055505b5b5600a165627a7a72305820f6294d2b1f50ee85f9eaafaf4b6bd27a840496a2a6ac003d446f6e90da324d920029",
+  "deployedBytecode": "0x606060405260043610610180576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630262dc131461018a5780630a384665146101c35780632511b182146101ec57806326ffee081461021557806331711884146102575780633c78fe07146102805780633f4ba83a146102e95780634a751072146102fe5780634e71d92d1461033c5780635c975abb1461035157806361241c281461037e5780637822ed49146103a15780637b352962146103f65780638456cb59146104235780638da5cb5b14610438578063a4bd7a201461048d578063a6f2ae3a146104b6578063a72a05f7146104c0578063d1058e59146104f5578063d4f114a61461050a578063d56b288914610533578063d6f7ddf914610548578063d8b964e61461058a578063daea85c5146105db578063e486033914610614578063e69b414b14610661578063f07255e31461068a578063f2fde38b146106b3578063f5d82b6b146106ec578063fc0c546a1461072e575b610188610783565b005b341561019557600080fd5b6101c1600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610994565b005b34156101ce57600080fd5b6101d6610a17565b6040518082815260200191505060405180910390f35b34156101f757600080fd5b6101ff610a1d565b6040518082815260200191505060405180910390f35b341561022057600080fd5b610255600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050610a23565b005b341561026257600080fd5b61026a610c0c565b6040518082815260200191505060405180910390f35b341561028b57600080fd5b6102a7600480803563ffffffff16906020019091905050610c12565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156102f457600080fd5b6102fc610cb6565b005b341561030957600080fd5b61031f6004808035906020019091905050610d74565b604051808381526020018281526020019250505060405180910390f35b341561034757600080fd5b61034f610d98565b005b341561035c57600080fd5b610364610dbf565b604051808215151515815260200191505060405180910390f35b341561038957600080fd5b61039f6004808035906020019091905050610dd2565b005b34156103ac57600080fd5b6103b4610e46565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561040157600080fd5b610409610e6c565b604051808215151515815260200191505060405180910390f35b341561042e57600080fd5b610436610e7f565b005b341561044357600080fd5b61044b610f3f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561049857600080fd5b6104a0610f64565b6040518082815260200191505060405180910390f35b6104be610783565b005b34156104cb57600080fd5b6104d3610f6a565b604051808263ffffffff1663ffffffff16815260200191505060405180910390f35b341561050057600080fd5b610508610fdf565b005b341561051557600080fd5b61051d61117e565b6040518082815260200191505060405180910390f35b341561053e57600080fd5b610546611184565b005b341561055357600080fd5b610588600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050611421565b005b341561059557600080fd5b6105c1600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050611531565b604051808215151515815260200191505060405180910390f35b34156105e657600080fd5b610612600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050611551565b005b341561061f57600080fd5b61064b600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050611623565b6040518082815260200191505060405180910390f35b341561066c57600080fd5b61067461163b565b6040518082815260200191505060405180910390f35b341561069557600080fd5b61069d611641565b6040518082815260200191505060405180910390f35b34156106be57600080fd5b6106ea600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050611647565b005b34156106f757600080fd5b61072c600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061179c565b005b341561073957600080fd5b6107416118eb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000806000600960009054906101000a900460ff161515156107a457600080fd5b6004546005541015156107b657600080fd5b60085442111515156107c757600080fd5b600060149054906101000a900460ff161515156107e357600080fd5b349250600091506107ff8360075461191190919063ffffffff16565b9050600454816005540111156108555761082660055460045461194c90919063ffffffff16565b905061083d6007548261196590919063ffffffff16565b9250610852833461194c90919063ffffffff16565b91505b61086a8160055461198090919063ffffffff16565b6005819055506004546005541115151561088357600080fd5b61088d338261199e565b3373ffffffffffffffffffffffffffffffffffffffff167f28cab0d660ed8aedd61a8c9db00b97f6a2d67e07d87795994f440b18bc5f1aa38285604051808381526020018281526020019250505060405180910390a2600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc849081150290604051600060405180830381858888f19350505050151561094557600080fd5b600082111561098f573373ffffffffffffffffffffffffffffffffffffffff166108fc839081150290604051600060405180830381858888f19350505050151561098e57600080fd5b5b505050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156109ef57600080fd5b600060149054906101000a900460ff16151515610a0b57600080fd5b610a14816119d0565b50565b60045481565b60065481565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610a8057600080fd5b600060149054906101000a900460ff16151515610a9c57600080fd5b610ab18260075461191190919063ffffffff16565b905080600a60008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410151515610b0157600080fd5b610b5381600a60008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461194c90919063ffffffff16565b600a60008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610bab8160055461194c90919063ffffffff16565b6005819055508273ffffffffffffffffffffffffffffffffffffffff167f2da8b2becb27b189a54d21689aa110c877379a94c6f59f115cedc91d66239b338284604051808381526020018281526020019250505060405180910390a2505050565b60075481565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610c6f57600080fd5b600c60008363ffffffff1663ffffffff16815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050919050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610d1157600080fd5b600060149054906101000a900460ff161515610d2c57600080fd5b60008060146101000a81548160ff0219169083151502179055507f7805862f689e2f13df9f062ff482ad3ad112aca9e0847911ed832e158c525b3360405160405180910390a1565b600e6020528060005260406000206000915090508060000154908060010154905082565b600060149054906101000a900460ff16151515610db457600080fd5b610dbd336119d0565b565b600060149054906101000a900460ff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610e2d57600080fd5b600081111515610e3c57600080fd5b8060078190555050565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600960009054906101000a900460ff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610eda57600080fd5b600060149054906101000a900460ff16151515610ef657600080fd5b6001600060146101000a81548160ff0219169083151502179055507f6985a02210a168e66602d3235cb6db0e70f92b3ba4d376a33c0f3d9434bff62560405160405180910390a1565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600f5481565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610fc757600080fd5b600d60009054906101000a900463ffffffff16905090565b6000806000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561103d57600080fd5b600060149054906101000a900460ff1615151561105957600080fd5b600091505b600d60009054906101000a900463ffffffff1663ffffffff168263ffffffff16101561117a57600c60008363ffffffff1663ffffffff16815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050600b60008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16801561115e57506000600a60008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054115b1561116d5761116c816119d0565b5b818060010192505061105e565b5050565b60105481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156111df57600080fd5b6004546005541015806111f3575060085442115b15156111fe57600080fd5b600960009054906101000a900460ff1615151561121a57600080fd5b6001600960006101000a81548160ff021916908315150217905550600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306000604051602001526040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b151561135b57600080fd5b6102c65a03f1151561136c57600080fd5b505050604051805190506000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b151561140357600080fd5b6102c65a03f1151561141457600080fd5b5050506040518051905050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561147e57600080fd5b600060149054906101000a900460ff1615151561149a57600080fd5b6114af8260075461191190919063ffffffff16565b90506114c68160055461198090919063ffffffff16565b6005819055506114d6838261199e565b8273ffffffffffffffffffffffffffffffffffffffff167ff10143e1b37ebaf3698e98976d8bddabcea045adc939c03b245da18e81ea96518284604051808381526020018281526020019250505060405180910390a2505050565b600b6020528060005260406000206000915054906101000a900460ff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156115ac57600080fd5b600060149054906101000a900460ff161515156115c857600080fd5b6001600b60008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b600a6020528060005260406000206000915090505481565b60055481565b60115481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156116a257600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156116de57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156117f957600080fd5b600960009054906101000a900460ff1615151561181557600080fd5b60045460055410151561182757600080fd5b600854421115151561183857600080fd5b600060149054906101000a900460ff1615151561185457600080fd5b6118698260075461191190919063ffffffff16565b90506118808160055461198090919063ffffffff16565b600581905550611890838261199e565b8273ffffffffffffffffffffffffffffffffffffffff167fa818a22273fc309f0a3682b642c74c5b5c25c0615ff378d07767cd231e19fffc8284604051808381526020018281526020019250505060405180910390a2505050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060008414156119265760009150611945565b828402905082848281151561193757fe5b0414151561194157fe5b8091505b5092915050565b600082821115151561195a57fe5b818303905092915050565b600080828481151561197357fe5b0490508091505092915050565b600080828401905083811015151561199457fe5b8091505092915050565b600060149054906101000a900460ff161515156119ba57600080fd5b6119c48282611cab565b6119cc611eac565b5050565b60008060149054906101000a900460ff161515156119ed57600080fd5b600b60008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff161515611a4557600080fd5b6000600a60008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054111515611a9357600080fd5b600a60008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205490506000600a60008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1684846000604051602001526040518463ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b1515611c3d57600080fd5b6102c65a03f11515611c4e57600080fd5b50505060405180519050508173ffffffffffffffffffffffffffffffffffffffff167fd4ff88d569a7ad2bfd6b17da9dbe82e2ccc016fd0051e08ff1ad1e6fe8fc9b55826040518082815260200191505060405180910390a25050565b600060149054906101000a900460ff16151515611cc757600080fd5b6000600a60008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020541415611e135781600c6000600d60009054906101000a900463ffffffff1663ffffffff1663ffffffff16815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600d600081819054906101000a900463ffffffff168092919060010191906101000a81548163ffffffff021916908363ffffffff160217905550506000600b60008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505b611e6581600a60008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461198090919063ffffffff16565b600a60008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055505050565b601154600554101515611f2657600f60008154809291906001019190505550601054600f54101515611ee657600454601181905550611f25565b600e6000600f54815260200190815260200160002060000154601181905550600e6000600f548152602001908152602001600020600101546007819055505b5b5600a165627a7a72305820f6294d2b1f50ee85f9eaafaf4b6bd27a840496a2a6ac003d446f6e90da324d920029",
+  "sourceMap": "136:3261:1:-;;;268:5:6;247:26;;;;;;;;;;;;;;;;;;;;640:1:2;604:37;;789:5;764:30;;;;;;;;;;;;;;;;;;;;365:1:1;335:31;;402:1;372:31;;884:1716;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1172:13;1195:12;1217:19;1246:10;1266:17;1293:16;1319:8;509:10:8;501:5;;:18;;;;;;;;;;;;;;;;;;2396:13:2;2378:5;;:32;;;;;;;;;;;;;;;;;;2435:12;2421:11;;:26;;;;;;;;;;;;;;;;;;2478:19;2457:18;;:40;;;;;;;;;;;;;;;;;;2520:10;2508:9;:22;;;;2559:17;2540:16;:36;;;;2604:16;2586:15;:34;;;;2641:8;2631:7;:18;;;;2113:543;;;;;;;1380:86:1;;;;;;;;;1416:14;1380:86;;;;1451:4;1380:86;;;1344:14;:33;1359:15;;:17;;;;;;;;;;;;1344:33;;;;;;;;;;;:122;;;;;;;;;;;;;;;;;;;1512:86;;;;;;;;;1548:14;1512:86;;;;1583:4;1512:86;;;1476:14;:33;1491:15;;:17;;;;;;;;;;;;1476:33;;;;;;;;;;;:122;;;;;;;;;;;;;;;;;;;1644:86;;;;;;;;;1680:14;1644:86;;;;1715:4;1644:86;;;1608:14;:33;1623:15;;:17;;;;;;;;;;;;1608:33;;;;;;;;;;;:122;;;;;;;;;;;;;;;;;;;1776:86;;;;;;;;;1812:14;1776:86;;;;1847:4;1776:86;;;1740:14;:33;1755:15;;:17;;;;;;;;;;;;1740:33;;;;;;;;;;;:122;;;;;;;;;;;;;;;;;;;1908:86;;;;;;;;;1944:14;1908:86;;;;1979:4;1908:86;;;1872:14;:33;1887:15;;:17;;;;;;;;;;;;1872:33;;;;;;;;;;;:122;;;;;;;;;;;;;;;;;;;2040:86;;;;;;;;;2076:14;2040:86;;;;2111:4;2040:86;;;2004:14;:33;2019:15;;:17;;;;;;;;;;;;2004:33;;;;;;;;;;;:122;;;;;;;;;;;;;;;;;;;2172:86;;;;;;;;;2208:14;2172:86;;;;2243:4;2172:86;;;2136:14;:33;2151:15;;:17;;;;;;;;;;;;2136:33;;;;;;;;;;;:122;;;;;;;;;;;;;;;;;;;2304:87;;;;;;;;;2340:15;2304:87;;;;2376:4;2304:87;;;2268:14;:33;2283:15;;:17;;;;;;;;;;;;2268:33;;;;;;;;;;;:123;;;;;;;;;;;;;;;;;;;2437:87;;;;;;;;;2473:15;2437:87;;;;2509:4;2437:87;;;2401:14;:33;2416:15;;:17;;;;;;;;;;;;2401:33;;;;;;;;;;;:123;;;;;;;;;;;;;;;;;;;2555:14;:31;2570:15;;2555:31;;;;;;;;;;;:38;;;2534:18;:59;;;;884:1716;;;;;;;136:3261;;;;;;",
+  "deployedSourceMap": "136:3261:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7558:5:2;:3;:5::i;:::-;136:3261:1;5944:97:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;568:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;647:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4818:421;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;684:24;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7321:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;833:87:6;;;;;;;;;;;;;;277:52:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5796:68:2;;;;;;;;;;;;;;247:26:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2723:125:2;;;;;;;;;;;;;;;;;;;;;;;;;;484:26;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;764:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;666:85:6;;;;;;;;;;;;;;238:20:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;335:31:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2938:871:2;;;;;;7212:103;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6118:277;;;;;;;;;;;;;;372:31:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6979:227:2;;;;;;;;;;;;;;4397:347;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;883:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6834:103;;;;;;;;;;;;;;;;;;;;;;;;;;;;836:41;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;604:37;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;409:33:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;834:169:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;3934:353:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;539:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2938:871;2996:17;3035:20;3133;1553:10;;;;;;;;;;;1552:11;1543:21;;;;;;;;1604:15;;1583:18;;:36;1574:46;;;;;;;;1646:7;;1639:3;:14;;1630:24;;;;;;;;416:6:6;;;;;;;;;;;415:7;407:16;;;;;;;;3016:9:2;2996:29;;3058:1;3035:24;;3156;3170:9;3156;;:13;;:24;;;;:::i;:::-;3133:47;;3231:15;;3216:12;3195:18;;:33;:51;3191:242;;;3277:39;3297:18;;3277:15;;:19;;:39;;;;:::i;:::-;3262:54;;3342:27;3359:9;;3342:12;:16;;:27;;;;:::i;:::-;3330:39;;3398:24;3412:9;3398;:13;;:24;;;;:::i;:::-;3383:39;;3191:242;3464:36;3487:12;3464:18;;:22;;:36;;;;:::i;:::-;3443:18;:57;;;;3541:15;;3519:18;;:37;;3510:47;;;;;;;;3568:37;3580:10;3592:12;3568:11;:37::i;:::-;3627:10;3615:48;;;3639:12;3653:9;3615:48;;;;;;;;;;;;;;;;;;;;;;;;3674:18;;;;;;;;;;;:27;;:38;3702:9;3674:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3742:1;3727:12;:16;3723:80;;;3759:10;:19;;:33;3779:12;3759:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3723:80;2938:871;;;:::o;5944:97::-;654:5:8;;;;;;;;;;;640:19;;:10;:19;;;632:28;;;;;;;;416:6:6;;;;;;;;;;;415:7;407:16;;;;;;;;6015:19:2;6024:9;6015:8;:19::i;:::-;5944:97;:::o;568:30::-;;;;:::o;647:31::-;;;;:::o;4818:421::-;4914:20;654:5:8;;;;;;;;;;;640:19;;:10;:19;;;632:28;;;;;;;;416:6:6;;;;;;;;;;;415:7;407:16;;;;;;;;4937:35:2;4951:20;4937:9;;:13;;:35;;;;:::i;:::-;4914:58;;5013:12;4992:6;:17;4999:9;4992:17;;;;;;;;;;;;;;;;:33;;4983:43;;;;;;;;5057:35;5079:12;5057:6;:17;5064:9;5057:17;;;;;;;;;;;;;;;;:21;;:35;;;;:::i;:::-;5037:6;:17;5044:9;5037:17;;;;;;;;;;;;;;;:55;;;;5123:36;5146:12;5123:18;;:22;;:36;;;;:::i;:::-;5102:18;:57;;;;5186:9;5170:62;;;5197:12;5211:20;5170:62;;;;;;;;;;;;;;;;;;;;;;;;4818:421;;;:::o;684:24::-;;;;:::o;7321:109::-;7380:7;654:5:8;;;;;;;;;;;640:19;;:10;:19;;;632:28;;;;;;;;7406:14:2;:17;7421:1;7406:17;;;;;;;;;;;;;;;;;;;;;;;;;7399:24;;7321:109;;;:::o;833:87:6:-;654:5:8;;;;;;;;;;;640:19;;:10;:19;;;632:28;;;;;;;;568:6:6;;;;;;;;;;;560:15;;;;;;;;895:5;886:6;;:14;;;;;;;;;;;;;;;;;;906:9;;;;;;;;;;833:87::o;277:52:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;5796:68:2:-;416:6:6;;;;;;;;;;;415:7;407:16;;;;;;;;5837:20:2;5846:10;5837:8;:20::i;:::-;5796:68::o;247:26:6:-;;;;;;;;;;;;;:::o;2723:125:2:-;654:5:8;;;;;;;;;;;640:19;;:10;:19;;;632:28;;;;;;;;2807:1:2;2794:10;:14;2785:24;;;;;;;;2831:10;2819:9;:22;;;;2723:125;:::o;484:26::-;;;;;;;;;;;;;:::o;764:30::-;;;;;;;;;;;;;:::o;666:85:6:-;654:5:8;;;;;;;;;;;640:19;;:10;:19;;;632:28;;;;;;;;416:6:6;;;;;;;;;;;415:7;407:16;;;;;;;;729:4;720:6;;:13;;;;;;;;;;;;;;;;;;739:7;;;;;;;;;;666:85::o;238:20:8:-;;;;;;;;;;;;;:::o;335:31:1:-;;;;:::o;7212:103:2:-;7269:6;654:5:8;;;;;;;;;;;640:19;;:10;:19;;;632:28;;;;;;;;7294:14:2;;;;;;;;;;;7287:21;;7212:103;:::o;6118:277::-;6177:8;6230:16;654:5:8;;;;;;;;;;;640:19;;:10;:19;;;632:28;;;;;;;;416:6:6;;;;;;;;;;;415:7;407:16;;;;;;;;6188:1:2;6177:12;;6172:217;6195:14;;;;;;;;;;;6191:18;;:1;:18;;;6172:217;;;6249:14;:17;6264:1;6249:17;;;;;;;;;;;;;;;;;;;;;;;;;6230:36;;6284:8;:18;6293:8;6284:18;;;;;;;;;;;;;;;;;;;;;;;;;:42;;;;;6325:1;6306:6;:16;6313:8;6306:16;;;;;;;;;;;;;;;;:20;6284:42;6280:99;;;6346:18;6355:8;6346;:18::i;:::-;6280:99;6211:3;;;;;;;6172:217;;;6118:277;;:::o;372:31:1:-;;;;:::o;6979:227:2:-;654:5:8;;;;;;;;;;;640:19;;:10;:19;;;632:28;;;;;;;;7048:15:2;;7026:18;;:37;;:54;;;;7073:7;;7067:3;:13;7026:54;7017:64;;;;;;;;7101:10;;;;;;;;;;;7100:11;7091:21;;;;;;;;7135:4;7122:10;;:17;;;;;;;;;;;;;;;;;;7149:5;;;;;;;;;;;:14;;;7164:11;;;;;;;;;;;7177:5;;;;;;;;;;;:15;;;7193:4;7177:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7149:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6979:227::o;4397:347::-;4495:20;654:5:8;;;;;;;;;;;640:19;;:10;:19;;;632:28;;;;;;;;416:6:6;;;;;;;;;;;415:7;407:16;;;;;;;;4518:35:2;4532:20;4518:9;;:13;;:35;;;;:::i;:::-;4495:58;;4584:36;4607:12;4584:18;;:22;;:36;;;;:::i;:::-;4563:18;:57;;;;4631:36;4643:9;4654:12;4631:11;:36::i;:::-;4691:9;4677:60;;;4702:12;4716:20;4677:60;;;;;;;;;;;;;;;;;;;;;;;;4397:347;;;:::o;883:40::-;;;;;;;;;;;;;;;;;;;;;;:::o;6834:103::-;654:5:8;;;;;;;;;;;640:19;;:10;:19;;;632:28;;;;;;;;416:6:6;;;;;;;;;;;415:7;407:16;;;;;;;;6926:4:2;6904:8;:19;6913:9;6904:19;;;;;;;;;;;;;;;;:26;;;;;;;;;;;;;;;;;;6834:103;:::o;836:41::-;;;;;;;;;;;;;;;;;:::o;604:37::-;;;;:::o;409:33:1:-;;;;:::o;834:169:8:-;654:5;;;;;;;;;;;640:19;;:10;:19;;;632:28;;;;;;;;930:1;910:22;;:8;:22;;;;902:31;;;;;;;;967:8;939:37;;960:5;;;;;;;;;;;939:37;;;;;;;;;;;;990:8;982:5;;:16;;;;;;;;;;;;;;;;;;834:169;:::o;3934:353:2:-;4041:20;654:5:8;;;;;;;;;;;640:19;;:10;:19;;;632:28;;;;;;;;1553:10:2;;;;;;;;;;;1552:11;1543:21;;;;;;;;1604:15;;1583:18;;:36;1574:46;;;;;;;;1646:7;;1639:3;:14;;1630:24;;;;;;;;416:6:6;;;;;;;;;;;415:7;407:16;;;;;;;;4064:35:2;4078:20;4064:9;;:13;;:35;;;;:::i;:::-;4041:58;;4130:36;4153:12;4130:18;;:22;;:36;;;;:::i;:::-;4109:18;:57;;;;4177:36;4189:9;4200:12;4177:11;:36::i;:::-;4234:9;4223:57;;;4245:12;4259:20;4223:57;;;;;;;;;;;;;;;;;;;;;;;;3934:353;;;:::o;539:22::-;;;;;;;;;;;;;:::o;138:173:7:-;196:7;251:9;220:1;215;:6;211:35;;;238:1;231:8;;;;211:35;267:1;263;:5;251:17;;290:1;285;281;:5;;;;;;;;:10;274:18;;;;;;305:1;298:8;;138:173;;;;;;:::o;584:110::-;642:7;669:1;664;:6;;657:14;;;;;;688:1;684;:5;677:12;;584:110;;;;:::o;315:265::-;373:7;462:9;478:1;474;:5;;;;;;;;462:17;;574:1;567:8;;315:265;;;;;:::o;698:129::-;756:7;771:9;787:1;783;:5;771:17;;806:1;801;:6;;794:14;;;;;;821:1;814:8;;698:129;;;;;:::o;3215:180:1:-;416:6:6;;;;;;;;;;;415:7;407:16;;;;;;;;3311:56:1;3342:9;3353:13;3311:30;:56::i;:::-;3377:11;:9;:11::i;:::-;3215:180;;:::o;6490:338:2:-;6639:20;416:6:6;;;;;;;;;;;415:7;407:16;;;;;;;;6568:8:2;:19;6577:9;6568:19;;;;;;;;;;;;;;;;;;;;;;;;;6560:28;;;;;;;;6626:1;6606:6;:17;6613:9;6606:17;;;;;;;;;;;;;;;;:21;6598:30;;;;;;;;6662:6;:17;6669:9;6662:17;;;;;;;;;;;;;;;;6639:40;;6709:1;6689:6;:17;6696:9;6689:17;;;;;;;;;;;;;;;:21;;;;6721:5;;;;;;;;;;;:18;;;6740:11;;;;;;;;;;;6753:9;6764:12;6721:56;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6797:9;6787:34;;;6808:12;6787:34;;;;;;;;;;;;;;;;;;6490:338;;:::o;5333:334::-;416:6:6;;;;;;;;;;;415:7;407:16;;;;;;;;5454:1:2;5433:6;:17;5440:9;5433:17;;;;;;;;;;;;;;;;:22;5429:166;;;5504:9;5471:14;:30;5486:14;;;;;;;;;;;5471:30;;;;;;;;;;;;;;;;:42;;;;;;;;;;;;;;;;;;5527:14;;:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5579:5;5557:8;:19;5566:9;5557:19;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;5429:166;5624:36;5646:13;5624:6;:17;5631:9;5624:17;;;;;;;;;;;;;;;;:21;;:36;;;;:::i;:::-;5604:6;:17;5611:9;5604:17;;;;;;;;;;;;;;;:56;;;;5333:334;;:::o;2679:432:1:-;2745:18;;2723;;:40;;2719:386;;;2779:15;;:17;;;;;;;;;;;;;2833:15;;2814;;:34;;2810:285;;;2889:15;;2868:18;:36;;;;2810:285;;;2976:14;:31;2991:15;;2976:31;;;;;;;;;;;:38;;;2955:18;:59;;;;3044:14;:31;3059:15;;3044:31;;;;;;;;;;;:36;;;3032:9;:48;;;;2810:285;2719:386;2679:432::o",
+  "source": "pragma solidity ^0.4.11;\n\nimport './ClaimableCrowdsale.sol';\n\n/**\n * @title ChangeableRateCrowdsale\n * @dev HoQu.io Main Sale stage\n */\ncontract ChangeableRateCrowdsale is ClaimableCrowdsale {\n\n    struct RateBoundary {\n        uint256 amount;\n        uint256 rate;\n    }\n\n    mapping (uint => RateBoundary) public rateBoundaries;\n    uint public currentBoundary = 0;\n    uint public numOfBoundaries = 0;\n    uint256 public nextBoundaryAmount;\n\n    /**\n    * @param _tokenAddress address of a HQX token contract\n    * @param _bankAddress address for remain HQX tokens accumulation\n    * @param _beneficiaryAddress accepted ETH go to this address\n    * @param _tokenRate rate HQX per 1 ETH\n    * @param _minBuyableAmount min ETH per each buy action (in ETH wei)\n    * @param _maxTokensAmount ICO HQX capacity (in HQX wei)\n    * @param _endDate the date when ICO will expire\n    */\n    function ChangeableRateCrowdsale(\n        address _tokenAddress,\n        address _bankAddress,\n        address _beneficiaryAddress,\n        uint256 _tokenRate,\n        uint256 _minBuyableAmount,\n        uint256 _maxTokensAmount,\n        uint256 _endDate\n    ) ClaimableCrowdsale(\n        _tokenAddress,\n        _bankAddress,\n        _beneficiaryAddress,\n        _tokenRate,\n        _minBuyableAmount,\n        _maxTokensAmount,\n        _endDate\n    ) {\n        rateBoundaries[numOfBoundaries++] = RateBoundary({\n            amount : 13777764 ether,\n            rate : 6000\n        });\n        rateBoundaries[numOfBoundaries++] = RateBoundary({\n            amount : 27555528 ether,\n            rate : 5750\n        });\n        rateBoundaries[numOfBoundaries++] = RateBoundary({\n            amount : 41333292 ether,\n            rate : 5650\n        });\n        rateBoundaries[numOfBoundaries++] = RateBoundary({\n            amount : 55111056 ether,\n            rate : 5550\n        });\n        rateBoundaries[numOfBoundaries++] = RateBoundary({\n            amount : 68888820 ether,\n            rate : 5450\n        });\n        rateBoundaries[numOfBoundaries++] = RateBoundary({\n            amount : 82666584 ether,\n            rate : 5350\n        });\n        rateBoundaries[numOfBoundaries++] = RateBoundary({\n            amount : 96444348 ether,\n            rate : 5250\n        });\n        rateBoundaries[numOfBoundaries++] = RateBoundary({\n            amount : 110222112 ether,\n            rate : 5150\n        });\n        rateBoundaries[numOfBoundaries++] = RateBoundary({\n            amount : 137777640 ether,\n            rate : 5000\n        });\n        nextBoundaryAmount = rateBoundaries[currentBoundary].amount;\n    }\n\n    /**\n     * Internal method to change rate if boundary is hit\n     */\n    function touchRate() internal {\n        if (issuedTokensAmount >= nextBoundaryAmount) {\n            currentBoundary++;\n            if (currentBoundary >= numOfBoundaries) {\n                nextBoundaryAmount = maxTokensAmount;\n            }\n            else {\n                nextBoundaryAmount = rateBoundaries[currentBoundary].amount;\n                tokenRate = rateBoundaries[currentBoundary].rate;\n            }\n        }\n    }\n\n    /**\n     * Inherited internal method for storing tokens in contract until claim stage\n     */\n    function storeTokens(address _receiver, uint256 _tokensAmount) internal whenNotPaused {\n        ClaimableCrowdsale.storeTokens(_receiver, _tokensAmount);\n        touchRate();\n    }\n}",
+  "sourcePath": "/Users/slash686/Projects/hoqu-sale-github/contracts/ChangeableRateCrowdsale.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/slash686/Projects/hoqu-sale-github/contracts/ChangeableRateCrowdsale.sol",
+      "exportedSymbols": {
+        "ChangeableRateCrowdsale": [
+          551
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".11"
+          ]
+        },
+        "id": 350,
+        "name": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1185,
+          "absolutePath": "/Users/slash686/Projects/hoqu-sale-github/contracts/ClaimableCrowdsale.sol",
+          "file": "./ClaimableCrowdsale.sol",
+          "scope": 552,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 351,
+        "name": "ImportDirective",
+        "src": "26:34:1"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            1184,
+            1469,
+            1623
+          ],
+          "contractKind": "contract",
+          "documentation": "@title ChangeableRateCrowdsale\n@dev HoQu.io Main Sale stage",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            551,
+            1184,
+            1469,
+            1623
+          ],
+          "name": "ChangeableRateCrowdsale",
+          "scope": 552
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "ClaimableCrowdsale",
+                  "referencedDeclaration": 1184,
+                  "type": "contract ClaimableCrowdsale"
+                },
+                "id": 352,
+                "name": "UserDefinedTypeName",
+                "src": "172:18:1"
+              }
+            ],
+            "id": 353,
+            "name": "InheritanceSpecifier",
+            "src": "172:18:1"
+          },
+          {
+            "attributes": {
+              "canonicalName": "ChangeableRateCrowdsale.RateBoundary",
+              "name": "RateBoundary",
+              "scope": 551,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "amount",
+                  "scope": 358,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 354,
+                    "name": "ElementaryTypeName",
+                    "src": "228:7:1"
+                  }
+                ],
+                "id": 355,
+                "name": "VariableDeclaration",
+                "src": "228:14:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "rate",
+                  "scope": 358,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 356,
+                    "name": "ElementaryTypeName",
+                    "src": "252:7:1"
+                  }
+                ],
+                "id": 357,
+                "name": "VariableDeclaration",
+                "src": "252:12:1"
+              }
+            ],
+            "id": 358,
+            "name": "StructDefinition",
+            "src": "198:73:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "rateBoundaries",
+              "scope": 551,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 359,
+                    "name": "ElementaryTypeName",
+                    "src": "286:4:1"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "RateBoundary",
+                      "referencedDeclaration": 358,
+                      "type": "struct ChangeableRateCrowdsale.RateBoundary storage pointer"
+                    },
+                    "id": 360,
+                    "name": "UserDefinedTypeName",
+                    "src": "294:12:1"
+                  }
+                ],
+                "id": 361,
+                "name": "Mapping",
+                "src": "277:30:1"
+              }
+            ],
+            "id": 362,
+            "name": "VariableDeclaration",
+            "src": "277:52:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "currentBoundary",
+              "scope": 551,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 363,
+                "name": "ElementaryTypeName",
+                "src": "335:4:1"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 364,
+                "name": "Literal",
+                "src": "365:1:1"
+              }
+            ],
+            "id": 365,
+            "name": "VariableDeclaration",
+            "src": "335:31:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "numOfBoundaries",
+              "scope": 551,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 366,
+                "name": "ElementaryTypeName",
+                "src": "372:4:1"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 367,
+                "name": "Literal",
+                "src": "402:1:1"
+              }
+            ],
+            "id": 368,
+            "name": "VariableDeclaration",
+            "src": "372:31:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "nextBoundaryAmount",
+              "scope": 551,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 369,
+                "name": "ElementaryTypeName",
+                "src": "409:7:1"
+              }
+            ],
+            "id": 370,
+            "name": "VariableDeclaration",
+            "src": "409:33:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "name": "ChangeableRateCrowdsale",
+              "payable": false,
+              "scope": 551,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_tokenAddress",
+                      "scope": 494,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 371,
+                        "name": "ElementaryTypeName",
+                        "src": "926:7:1"
+                      }
+                    ],
+                    "id": 372,
+                    "name": "VariableDeclaration",
+                    "src": "926:21:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_bankAddress",
+                      "scope": 494,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 373,
+                        "name": "ElementaryTypeName",
+                        "src": "957:7:1"
+                      }
+                    ],
+                    "id": 374,
+                    "name": "VariableDeclaration",
+                    "src": "957:20:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_beneficiaryAddress",
+                      "scope": 494,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 375,
+                        "name": "ElementaryTypeName",
+                        "src": "987:7:1"
+                      }
+                    ],
+                    "id": 376,
+                    "name": "VariableDeclaration",
+                    "src": "987:27:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_tokenRate",
+                      "scope": 494,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 377,
+                        "name": "ElementaryTypeName",
+                        "src": "1024:7:1"
+                      }
+                    ],
+                    "id": 378,
+                    "name": "VariableDeclaration",
+                    "src": "1024:18:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_minBuyableAmount",
+                      "scope": 494,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 379,
+                        "name": "ElementaryTypeName",
+                        "src": "1052:7:1"
+                      }
+                    ],
+                    "id": 380,
+                    "name": "VariableDeclaration",
+                    "src": "1052:25:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_maxTokensAmount",
+                      "scope": 494,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 381,
+                        "name": "ElementaryTypeName",
+                        "src": "1087:7:1"
+                      }
+                    ],
+                    "id": 382,
+                    "name": "VariableDeclaration",
+                    "src": "1087:24:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_endDate",
+                      "scope": 494,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 383,
+                        "name": "ElementaryTypeName",
+                        "src": "1121:7:1"
+                      }
+                    ],
+                    "id": 384,
+                    "name": "VariableDeclaration",
+                    "src": "1121:16:1"
+                  }
+                ],
+                "id": 385,
+                "name": "ParameterList",
+                "src": "916:227:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 395,
+                "name": "ParameterList",
+                "src": "1334:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 1184,
+                      "type": "type(contract ClaimableCrowdsale)",
+                      "value": "ClaimableCrowdsale"
+                    },
+                    "id": 386,
+                    "name": "Identifier",
+                    "src": "1144:18:1"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 372,
+                      "type": "address",
+                      "value": "_tokenAddress"
+                    },
+                    "id": 387,
+                    "name": "Identifier",
+                    "src": "1172:13:1"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 374,
+                      "type": "address",
+                      "value": "_bankAddress"
+                    },
+                    "id": 388,
+                    "name": "Identifier",
+                    "src": "1195:12:1"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 376,
+                      "type": "address",
+                      "value": "_beneficiaryAddress"
+                    },
+                    "id": 389,
+                    "name": "Identifier",
+                    "src": "1217:19:1"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 378,
+                      "type": "uint256",
+                      "value": "_tokenRate"
+                    },
+                    "id": 390,
+                    "name": "Identifier",
+                    "src": "1246:10:1"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 380,
+                      "type": "uint256",
+                      "value": "_minBuyableAmount"
+                    },
+                    "id": 391,
+                    "name": "Identifier",
+                    "src": "1266:17:1"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 382,
+                      "type": "uint256",
+                      "value": "_maxTokensAmount"
+                    },
+                    "id": 392,
+                    "name": "Identifier",
+                    "src": "1293:16:1"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 384,
+                      "type": "uint256",
+                      "value": "_endDate"
+                    },
+                    "id": 393,
+                    "name": "Identifier",
+                    "src": "1319:8:1"
+                  }
+                ],
+                "id": 394,
+                "name": "ModifierInvocation",
+                "src": "1144:189:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 362,
+                                  "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)",
+                                  "value": "rateBoundaries"
+                                },
+                                "id": 396,
+                                "name": "Identifier",
+                                "src": "1344:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "++",
+                                  "prefix": false,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 368,
+                                      "type": "uint256",
+                                      "value": "numOfBoundaries"
+                                    },
+                                    "id": 397,
+                                    "name": "Identifier",
+                                    "src": "1359:15:1"
+                                  }
+                                ],
+                                "id": 398,
+                                "name": "UnaryOperation",
+                                "src": "1359:17:1"
+                              }
+                            ],
+                            "id": 399,
+                            "name": "IndexAccess",
+                            "src": "1344:33:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "amount",
+                                "rate"
+                              ],
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 358,
+                                  "type": "type(struct ChangeableRateCrowdsale.RateBoundary storage pointer)",
+                                  "value": "RateBoundary"
+                                },
+                                "id": 400,
+                                "name": "Identifier",
+                                "src": "1380:12:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "3133373737373634",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": "ether",
+                                  "token": "number",
+                                  "type": "int_const 13777764000000000000000000",
+                                  "value": "13777764"
+                                },
+                                "id": 401,
+                                "name": "Literal",
+                                "src": "1416:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "36303030",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 6000",
+                                  "value": "6000"
+                                },
+                                "id": 402,
+                                "name": "Literal",
+                                "src": "1451:4:1"
+                              }
+                            ],
+                            "id": 403,
+                            "name": "FunctionCall",
+                            "src": "1380:86:1"
+                          }
+                        ],
+                        "id": 404,
+                        "name": "Assignment",
+                        "src": "1344:122:1"
+                      }
+                    ],
+                    "id": 405,
+                    "name": "ExpressionStatement",
+                    "src": "1344:122:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 362,
+                                  "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)",
+                                  "value": "rateBoundaries"
+                                },
+                                "id": 406,
+                                "name": "Identifier",
+                                "src": "1476:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "++",
+                                  "prefix": false,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 368,
+                                      "type": "uint256",
+                                      "value": "numOfBoundaries"
+                                    },
+                                    "id": 407,
+                                    "name": "Identifier",
+                                    "src": "1491:15:1"
+                                  }
+                                ],
+                                "id": 408,
+                                "name": "UnaryOperation",
+                                "src": "1491:17:1"
+                              }
+                            ],
+                            "id": 409,
+                            "name": "IndexAccess",
+                            "src": "1476:33:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "amount",
+                                "rate"
+                              ],
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 358,
+                                  "type": "type(struct ChangeableRateCrowdsale.RateBoundary storage pointer)",
+                                  "value": "RateBoundary"
+                                },
+                                "id": 410,
+                                "name": "Identifier",
+                                "src": "1512:12:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "3237353535353238",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": "ether",
+                                  "token": "number",
+                                  "type": "int_const 27555528000000000000000000",
+                                  "value": "27555528"
+                                },
+                                "id": 411,
+                                "name": "Literal",
+                                "src": "1548:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "35373530",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 5750",
+                                  "value": "5750"
+                                },
+                                "id": 412,
+                                "name": "Literal",
+                                "src": "1583:4:1"
+                              }
+                            ],
+                            "id": 413,
+                            "name": "FunctionCall",
+                            "src": "1512:86:1"
+                          }
+                        ],
+                        "id": 414,
+                        "name": "Assignment",
+                        "src": "1476:122:1"
+                      }
+                    ],
+                    "id": 415,
+                    "name": "ExpressionStatement",
+                    "src": "1476:122:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 362,
+                                  "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)",
+                                  "value": "rateBoundaries"
+                                },
+                                "id": 416,
+                                "name": "Identifier",
+                                "src": "1608:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "++",
+                                  "prefix": false,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 368,
+                                      "type": "uint256",
+                                      "value": "numOfBoundaries"
+                                    },
+                                    "id": 417,
+                                    "name": "Identifier",
+                                    "src": "1623:15:1"
+                                  }
+                                ],
+                                "id": 418,
+                                "name": "UnaryOperation",
+                                "src": "1623:17:1"
+                              }
+                            ],
+                            "id": 419,
+                            "name": "IndexAccess",
+                            "src": "1608:33:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "amount",
+                                "rate"
+                              ],
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 358,
+                                  "type": "type(struct ChangeableRateCrowdsale.RateBoundary storage pointer)",
+                                  "value": "RateBoundary"
+                                },
+                                "id": 420,
+                                "name": "Identifier",
+                                "src": "1644:12:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "3431333333323932",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": "ether",
+                                  "token": "number",
+                                  "type": "int_const 41333292000000000000000000",
+                                  "value": "41333292"
+                                },
+                                "id": 421,
+                                "name": "Literal",
+                                "src": "1680:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "35363530",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 5650",
+                                  "value": "5650"
+                                },
+                                "id": 422,
+                                "name": "Literal",
+                                "src": "1715:4:1"
+                              }
+                            ],
+                            "id": 423,
+                            "name": "FunctionCall",
+                            "src": "1644:86:1"
+                          }
+                        ],
+                        "id": 424,
+                        "name": "Assignment",
+                        "src": "1608:122:1"
+                      }
+                    ],
+                    "id": 425,
+                    "name": "ExpressionStatement",
+                    "src": "1608:122:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 362,
+                                  "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)",
+                                  "value": "rateBoundaries"
+                                },
+                                "id": 426,
+                                "name": "Identifier",
+                                "src": "1740:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "++",
+                                  "prefix": false,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 368,
+                                      "type": "uint256",
+                                      "value": "numOfBoundaries"
+                                    },
+                                    "id": 427,
+                                    "name": "Identifier",
+                                    "src": "1755:15:1"
+                                  }
+                                ],
+                                "id": 428,
+                                "name": "UnaryOperation",
+                                "src": "1755:17:1"
+                              }
+                            ],
+                            "id": 429,
+                            "name": "IndexAccess",
+                            "src": "1740:33:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "amount",
+                                "rate"
+                              ],
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 358,
+                                  "type": "type(struct ChangeableRateCrowdsale.RateBoundary storage pointer)",
+                                  "value": "RateBoundary"
+                                },
+                                "id": 430,
+                                "name": "Identifier",
+                                "src": "1776:12:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "3535313131303536",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": "ether",
+                                  "token": "number",
+                                  "type": "int_const 55111056000000000000000000",
+                                  "value": "55111056"
+                                },
+                                "id": 431,
+                                "name": "Literal",
+                                "src": "1812:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "35353530",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 5550",
+                                  "value": "5550"
+                                },
+                                "id": 432,
+                                "name": "Literal",
+                                "src": "1847:4:1"
+                              }
+                            ],
+                            "id": 433,
+                            "name": "FunctionCall",
+                            "src": "1776:86:1"
+                          }
+                        ],
+                        "id": 434,
+                        "name": "Assignment",
+                        "src": "1740:122:1"
+                      }
+                    ],
+                    "id": 435,
+                    "name": "ExpressionStatement",
+                    "src": "1740:122:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 362,
+                                  "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)",
+                                  "value": "rateBoundaries"
+                                },
+                                "id": 436,
+                                "name": "Identifier",
+                                "src": "1872:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "++",
+                                  "prefix": false,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 368,
+                                      "type": "uint256",
+                                      "value": "numOfBoundaries"
+                                    },
+                                    "id": 437,
+                                    "name": "Identifier",
+                                    "src": "1887:15:1"
+                                  }
+                                ],
+                                "id": 438,
+                                "name": "UnaryOperation",
+                                "src": "1887:17:1"
+                              }
+                            ],
+                            "id": 439,
+                            "name": "IndexAccess",
+                            "src": "1872:33:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "amount",
+                                "rate"
+                              ],
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 358,
+                                  "type": "type(struct ChangeableRateCrowdsale.RateBoundary storage pointer)",
+                                  "value": "RateBoundary"
+                                },
+                                "id": 440,
+                                "name": "Identifier",
+                                "src": "1908:12:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "3638383838383230",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": "ether",
+                                  "token": "number",
+                                  "type": "int_const 68888820000000000000000000",
+                                  "value": "68888820"
+                                },
+                                "id": 441,
+                                "name": "Literal",
+                                "src": "1944:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "35343530",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 5450",
+                                  "value": "5450"
+                                },
+                                "id": 442,
+                                "name": "Literal",
+                                "src": "1979:4:1"
+                              }
+                            ],
+                            "id": 443,
+                            "name": "FunctionCall",
+                            "src": "1908:86:1"
+                          }
+                        ],
+                        "id": 444,
+                        "name": "Assignment",
+                        "src": "1872:122:1"
+                      }
+                    ],
+                    "id": 445,
+                    "name": "ExpressionStatement",
+                    "src": "1872:122:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 362,
+                                  "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)",
+                                  "value": "rateBoundaries"
+                                },
+                                "id": 446,
+                                "name": "Identifier",
+                                "src": "2004:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "++",
+                                  "prefix": false,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 368,
+                                      "type": "uint256",
+                                      "value": "numOfBoundaries"
+                                    },
+                                    "id": 447,
+                                    "name": "Identifier",
+                                    "src": "2019:15:1"
+                                  }
+                                ],
+                                "id": 448,
+                                "name": "UnaryOperation",
+                                "src": "2019:17:1"
+                              }
+                            ],
+                            "id": 449,
+                            "name": "IndexAccess",
+                            "src": "2004:33:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "amount",
+                                "rate"
+                              ],
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 358,
+                                  "type": "type(struct ChangeableRateCrowdsale.RateBoundary storage pointer)",
+                                  "value": "RateBoundary"
+                                },
+                                "id": 450,
+                                "name": "Identifier",
+                                "src": "2040:12:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "3832363636353834",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": "ether",
+                                  "token": "number",
+                                  "type": "int_const 82666584000000000000000000",
+                                  "value": "82666584"
+                                },
+                                "id": 451,
+                                "name": "Literal",
+                                "src": "2076:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "35333530",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 5350",
+                                  "value": "5350"
+                                },
+                                "id": 452,
+                                "name": "Literal",
+                                "src": "2111:4:1"
+                              }
+                            ],
+                            "id": 453,
+                            "name": "FunctionCall",
+                            "src": "2040:86:1"
+                          }
+                        ],
+                        "id": 454,
+                        "name": "Assignment",
+                        "src": "2004:122:1"
+                      }
+                    ],
+                    "id": 455,
+                    "name": "ExpressionStatement",
+                    "src": "2004:122:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 362,
+                                  "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)",
+                                  "value": "rateBoundaries"
+                                },
+                                "id": 456,
+                                "name": "Identifier",
+                                "src": "2136:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "++",
+                                  "prefix": false,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 368,
+                                      "type": "uint256",
+                                      "value": "numOfBoundaries"
+                                    },
+                                    "id": 457,
+                                    "name": "Identifier",
+                                    "src": "2151:15:1"
+                                  }
+                                ],
+                                "id": 458,
+                                "name": "UnaryOperation",
+                                "src": "2151:17:1"
+                              }
+                            ],
+                            "id": 459,
+                            "name": "IndexAccess",
+                            "src": "2136:33:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "amount",
+                                "rate"
+                              ],
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 358,
+                                  "type": "type(struct ChangeableRateCrowdsale.RateBoundary storage pointer)",
+                                  "value": "RateBoundary"
+                                },
+                                "id": 460,
+                                "name": "Identifier",
+                                "src": "2172:12:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "3936343434333438",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": "ether",
+                                  "token": "number",
+                                  "type": "int_const 96444348000000000000000000",
+                                  "value": "96444348"
+                                },
+                                "id": 461,
+                                "name": "Literal",
+                                "src": "2208:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "35323530",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 5250",
+                                  "value": "5250"
+                                },
+                                "id": 462,
+                                "name": "Literal",
+                                "src": "2243:4:1"
+                              }
+                            ],
+                            "id": 463,
+                            "name": "FunctionCall",
+                            "src": "2172:86:1"
+                          }
+                        ],
+                        "id": 464,
+                        "name": "Assignment",
+                        "src": "2136:122:1"
+                      }
+                    ],
+                    "id": 465,
+                    "name": "ExpressionStatement",
+                    "src": "2136:122:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 362,
+                                  "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)",
+                                  "value": "rateBoundaries"
+                                },
+                                "id": 466,
+                                "name": "Identifier",
+                                "src": "2268:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "++",
+                                  "prefix": false,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 368,
+                                      "type": "uint256",
+                                      "value": "numOfBoundaries"
+                                    },
+                                    "id": 467,
+                                    "name": "Identifier",
+                                    "src": "2283:15:1"
+                                  }
+                                ],
+                                "id": 468,
+                                "name": "UnaryOperation",
+                                "src": "2283:17:1"
+                              }
+                            ],
+                            "id": 469,
+                            "name": "IndexAccess",
+                            "src": "2268:33:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "amount",
+                                "rate"
+                              ],
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 358,
+                                  "type": "type(struct ChangeableRateCrowdsale.RateBoundary storage pointer)",
+                                  "value": "RateBoundary"
+                                },
+                                "id": 470,
+                                "name": "Identifier",
+                                "src": "2304:12:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "313130323232313132",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": "ether",
+                                  "token": "number",
+                                  "type": "int_const 110222112000000000000000000",
+                                  "value": "110222112"
+                                },
+                                "id": 471,
+                                "name": "Literal",
+                                "src": "2340:15:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "35313530",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 5150",
+                                  "value": "5150"
+                                },
+                                "id": 472,
+                                "name": "Literal",
+                                "src": "2376:4:1"
+                              }
+                            ],
+                            "id": 473,
+                            "name": "FunctionCall",
+                            "src": "2304:87:1"
+                          }
+                        ],
+                        "id": 474,
+                        "name": "Assignment",
+                        "src": "2268:123:1"
+                      }
+                    ],
+                    "id": 475,
+                    "name": "ExpressionStatement",
+                    "src": "2268:123:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 362,
+                                  "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)",
+                                  "value": "rateBoundaries"
+                                },
+                                "id": 476,
+                                "name": "Identifier",
+                                "src": "2401:14:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "++",
+                                  "prefix": false,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 368,
+                                      "type": "uint256",
+                                      "value": "numOfBoundaries"
+                                    },
+                                    "id": 477,
+                                    "name": "Identifier",
+                                    "src": "2416:15:1"
+                                  }
+                                ],
+                                "id": 478,
+                                "name": "UnaryOperation",
+                                "src": "2416:17:1"
+                              }
+                            ],
+                            "id": 479,
+                            "name": "IndexAccess",
+                            "src": "2401:33:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "amount",
+                                "rate"
+                              ],
+                              "type": "struct ChangeableRateCrowdsale.RateBoundary memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 358,
+                                  "type": "type(struct ChangeableRateCrowdsale.RateBoundary storage pointer)",
+                                  "value": "RateBoundary"
+                                },
+                                "id": 480,
+                                "name": "Identifier",
+                                "src": "2437:12:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "313337373737363430",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": "ether",
+                                  "token": "number",
+                                  "type": "int_const 137777640000000000000000000",
+                                  "value": "137777640"
+                                },
+                                "id": 481,
+                                "name": "Literal",
+                                "src": "2473:15:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "35303030",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 5000",
+                                  "value": "5000"
+                                },
+                                "id": 482,
+                                "name": "Literal",
+                                "src": "2509:4:1"
+                              }
+                            ],
+                            "id": 483,
+                            "name": "FunctionCall",
+                            "src": "2437:87:1"
+                          }
+                        ],
+                        "id": 484,
+                        "name": "Assignment",
+                        "src": "2401:123:1"
+                      }
+                    ],
+                    "id": 485,
+                    "name": "ExpressionStatement",
+                    "src": "2401:123:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 370,
+                              "type": "uint256",
+                              "value": "nextBoundaryAmount"
+                            },
+                            "id": 486,
+                            "name": "Identifier",
+                            "src": "2534:18:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "amount",
+                              "referencedDeclaration": 355,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 362,
+                                      "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)",
+                                      "value": "rateBoundaries"
+                                    },
+                                    "id": 487,
+                                    "name": "Identifier",
+                                    "src": "2555:14:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 365,
+                                      "type": "uint256",
+                                      "value": "currentBoundary"
+                                    },
+                                    "id": 488,
+                                    "name": "Identifier",
+                                    "src": "2570:15:1"
+                                  }
+                                ],
+                                "id": 489,
+                                "name": "IndexAccess",
+                                "src": "2555:31:1"
+                              }
+                            ],
+                            "id": 490,
+                            "name": "MemberAccess",
+                            "src": "2555:38:1"
+                          }
+                        ],
+                        "id": 491,
+                        "name": "Assignment",
+                        "src": "2534:59:1"
+                      }
+                    ],
+                    "id": 492,
+                    "name": "ExpressionStatement",
+                    "src": "2534:59:1"
+                  }
+                ],
+                "id": 493,
+                "name": "Block",
+                "src": "1334:1266:1"
+              }
+            ],
+            "id": 494,
+            "name": "FunctionDefinition",
+            "src": "884:1716:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "touchRate",
+              "payable": false,
+              "scope": 551,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 495,
+                "name": "ParameterList",
+                "src": "2697:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 496,
+                "name": "ParameterList",
+                "src": "2709:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": ">=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 572,
+                              "type": "uint256",
+                              "value": "issuedTokensAmount"
+                            },
+                            "id": 497,
+                            "name": "Identifier",
+                            "src": "2723:18:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 370,
+                              "type": "uint256",
+                              "value": "nextBoundaryAmount"
+                            },
+                            "id": 498,
+                            "name": "Identifier",
+                            "src": "2745:18:1"
+                          }
+                        ],
+                        "id": 499,
+                        "name": "BinaryOperation",
+                        "src": "2723:40:1"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "++",
+                                  "prefix": false,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 365,
+                                      "type": "uint256",
+                                      "value": "currentBoundary"
+                                    },
+                                    "id": 500,
+                                    "name": "Identifier",
+                                    "src": "2779:15:1"
+                                  }
+                                ],
+                                "id": 501,
+                                "name": "UnaryOperation",
+                                "src": "2779:17:1"
+                              }
+                            ],
+                            "id": 502,
+                            "name": "ExpressionStatement",
+                            "src": "2779:17:1"
+                          },
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "commonType": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  },
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": ">=",
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 365,
+                                      "type": "uint256",
+                                      "value": "currentBoundary"
+                                    },
+                                    "id": 503,
+                                    "name": "Identifier",
+                                    "src": "2814:15:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 368,
+                                      "type": "uint256",
+                                      "value": "numOfBoundaries"
+                                    },
+                                    "id": 504,
+                                    "name": "Identifier",
+                                    "src": "2833:15:1"
+                                  }
+                                ],
+                                "id": 505,
+                                "name": "BinaryOperation",
+                                "src": "2814:34:1"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "operator": "=",
+                                          "type": "uint256"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 370,
+                                              "type": "uint256",
+                                              "value": "nextBoundaryAmount"
+                                            },
+                                            "id": 506,
+                                            "name": "Identifier",
+                                            "src": "2868:18:1"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 569,
+                                              "type": "uint256",
+                                              "value": "maxTokensAmount"
+                                            },
+                                            "id": 507,
+                                            "name": "Identifier",
+                                            "src": "2889:15:1"
+                                          }
+                                        ],
+                                        "id": 508,
+                                        "name": "Assignment",
+                                        "src": "2868:36:1"
+                                      }
+                                    ],
+                                    "id": 509,
+                                    "name": "ExpressionStatement",
+                                    "src": "2868:36:1"
+                                  }
+                                ],
+                                "id": 510,
+                                "name": "Block",
+                                "src": "2850:69:1"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "operator": "=",
+                                          "type": "uint256"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 370,
+                                              "type": "uint256",
+                                              "value": "nextBoundaryAmount"
+                                            },
+                                            "id": 511,
+                                            "name": "Identifier",
+                                            "src": "2955:18:1"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "isConstant": false,
+                                              "isLValue": true,
+                                              "isPure": false,
+                                              "lValueRequested": false,
+                                              "member_name": "amount",
+                                              "referencedDeclaration": 355,
+                                              "type": "uint256"
+                                            },
+                                            "children": [
+                                              {
+                                                "attributes": {
+                                                  "argumentTypes": null,
+                                                  "isConstant": false,
+                                                  "isLValue": true,
+                                                  "isPure": false,
+                                                  "lValueRequested": false,
+                                                  "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "attributes": {
+                                                      "argumentTypes": null,
+                                                      "overloadedDeclarations": [
+                                                        null
+                                                      ],
+                                                      "referencedDeclaration": 362,
+                                                      "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)",
+                                                      "value": "rateBoundaries"
+                                                    },
+                                                    "id": 512,
+                                                    "name": "Identifier",
+                                                    "src": "2976:14:1"
+                                                  },
+                                                  {
+                                                    "attributes": {
+                                                      "argumentTypes": null,
+                                                      "overloadedDeclarations": [
+                                                        null
+                                                      ],
+                                                      "referencedDeclaration": 365,
+                                                      "type": "uint256",
+                                                      "value": "currentBoundary"
+                                                    },
+                                                    "id": 513,
+                                                    "name": "Identifier",
+                                                    "src": "2991:15:1"
+                                                  }
+                                                ],
+                                                "id": 514,
+                                                "name": "IndexAccess",
+                                                "src": "2976:31:1"
+                                              }
+                                            ],
+                                            "id": 515,
+                                            "name": "MemberAccess",
+                                            "src": "2976:38:1"
+                                          }
+                                        ],
+                                        "id": 516,
+                                        "name": "Assignment",
+                                        "src": "2955:59:1"
+                                      }
+                                    ],
+                                    "id": 517,
+                                    "name": "ExpressionStatement",
+                                    "src": "2955:59:1"
+                                  },
+                                  {
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "operator": "=",
+                                          "type": "uint256"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 576,
+                                              "type": "uint256",
+                                              "value": "tokenRate"
+                                            },
+                                            "id": 518,
+                                            "name": "Identifier",
+                                            "src": "3032:9:1"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "isConstant": false,
+                                              "isLValue": true,
+                                              "isPure": false,
+                                              "lValueRequested": false,
+                                              "member_name": "rate",
+                                              "referencedDeclaration": 357,
+                                              "type": "uint256"
+                                            },
+                                            "children": [
+                                              {
+                                                "attributes": {
+                                                  "argumentTypes": null,
+                                                  "isConstant": false,
+                                                  "isLValue": true,
+                                                  "isPure": false,
+                                                  "lValueRequested": false,
+                                                  "type": "struct ChangeableRateCrowdsale.RateBoundary storage ref"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "attributes": {
+                                                      "argumentTypes": null,
+                                                      "overloadedDeclarations": [
+                                                        null
+                                                      ],
+                                                      "referencedDeclaration": 362,
+                                                      "type": "mapping(uint256 => struct ChangeableRateCrowdsale.RateBoundary storage ref)",
+                                                      "value": "rateBoundaries"
+                                                    },
+                                                    "id": 519,
+                                                    "name": "Identifier",
+                                                    "src": "3044:14:1"
+                                                  },
+                                                  {
+                                                    "attributes": {
+                                                      "argumentTypes": null,
+                                                      "overloadedDeclarations": [
+                                                        null
+                                                      ],
+                                                      "referencedDeclaration": 365,
+                                                      "type": "uint256",
+                                                      "value": "currentBoundary"
+                                                    },
+                                                    "id": 520,
+                                                    "name": "Identifier",
+                                                    "src": "3059:15:1"
+                                                  }
+                                                ],
+                                                "id": 521,
+                                                "name": "IndexAccess",
+                                                "src": "3044:31:1"
+                                              }
+                                            ],
+                                            "id": 522,
+                                            "name": "MemberAccess",
+                                            "src": "3044:36:1"
+                                          }
+                                        ],
+                                        "id": 523,
+                                        "name": "Assignment",
+                                        "src": "3032:48:1"
+                                      }
+                                    ],
+                                    "id": 524,
+                                    "name": "ExpressionStatement",
+                                    "src": "3032:48:1"
+                                  }
+                                ],
+                                "id": 525,
+                                "name": "Block",
+                                "src": "2937:158:1"
+                              }
+                            ],
+                            "id": 526,
+                            "name": "IfStatement",
+                            "src": "2810:285:1"
+                          }
+                        ],
+                        "id": 527,
+                        "name": "Block",
+                        "src": "2765:340:1"
+                      }
+                    ],
+                    "id": 528,
+                    "name": "IfStatement",
+                    "src": "2719:386:1"
+                  }
+                ],
+                "id": 529,
+                "name": "Block",
+                "src": "2709:402:1"
+              }
+            ],
+            "id": 530,
+            "name": "FunctionDefinition",
+            "src": "2679:432:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "name": "storeTokens",
+              "payable": false,
+              "scope": 551,
+              "stateMutability": "nonpayable",
+              "superFunction": 988,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_receiver",
+                      "scope": 550,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 531,
+                        "name": "ElementaryTypeName",
+                        "src": "3236:7:1"
+                      }
+                    ],
+                    "id": 532,
+                    "name": "VariableDeclaration",
+                    "src": "3236:17:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_tokensAmount",
+                      "scope": 550,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 533,
+                        "name": "ElementaryTypeName",
+                        "src": "3255:7:1"
+                      }
+                    ],
+                    "id": 534,
+                    "name": "VariableDeclaration",
+                    "src": "3255:21:1"
+                  }
+                ],
+                "id": 535,
+                "name": "ParameterList",
+                "src": "3235:42:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 538,
+                "name": "ParameterList",
+                "src": "3301:0:1"
+              },
+              {
+                "attributes": {
+                  "arguments": [
+                    null
+                  ]
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 1430,
+                      "type": "modifier ()",
+                      "value": "whenNotPaused"
+                    },
+                    "id": 536,
+                    "name": "Identifier",
+                    "src": "3287:13:1"
+                  }
+                ],
+                "id": 537,
+                "name": "ModifierInvocation",
+                "src": "3287:13:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "storeTokens",
+                              "referencedDeclaration": 988,
+                              "type": "function (address,uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1184,
+                                  "type": "type(contract ClaimableCrowdsale)",
+                                  "value": "ClaimableCrowdsale"
+                                },
+                                "id": 539,
+                                "name": "Identifier",
+                                "src": "3311:18:1"
+                              }
+                            ],
+                            "id": 541,
+                            "name": "MemberAccess",
+                            "src": "3311:30:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 532,
+                              "type": "address",
+                              "value": "_receiver"
+                            },
+                            "id": 542,
+                            "name": "Identifier",
+                            "src": "3342:9:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 534,
+                              "type": "uint256",
+                              "value": "_tokensAmount"
+                            },
+                            "id": 543,
+                            "name": "Identifier",
+                            "src": "3353:13:1"
+                          }
+                        ],
+                        "id": 544,
+                        "name": "FunctionCall",
+                        "src": "3311:56:1"
+                      }
+                    ],
+                    "id": 545,
+                    "name": "ExpressionStatement",
+                    "src": "3311:56:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 530,
+                              "type": "function ()",
+                              "value": "touchRate"
+                            },
+                            "id": 546,
+                            "name": "Identifier",
+                            "src": "3377:9:1"
+                          }
+                        ],
+                        "id": 547,
+                        "name": "FunctionCall",
+                        "src": "3377:11:1"
+                      }
+                    ],
+                    "id": 548,
+                    "name": "ExpressionStatement",
+                    "src": "3377:11:1"
+                  }
+                ],
+                "id": 549,
+                "name": "Block",
+                "src": "3301:94:1"
+              }
+            ],
+            "id": 550,
+            "name": "FunctionDefinition",
+            "src": "3215:180:1"
+          }
+        ],
+        "id": 551,
+        "name": "ContractDefinition",
+        "src": "136:3261:1"
+      }
+    ],
+    "id": 552,
+    "name": "SourceUnit",
+    "src": "0:3397:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x8f0483125fcb9aaaefa9209d8e9d7b9c8b9fb90f"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2017-12-05T07:54:11.427Z"
+}
